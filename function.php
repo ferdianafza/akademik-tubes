@@ -1,9 +1,15 @@
 <?php
 
-$host = "localhost";
-$user = "root";
-$pass = "";
-$name = "akademik";
+// mysql://b7976c5d537010:e9865089@us-cdbr-east-06.cleardb.net/heroku_8aaa86990959389?reconnect=true
+
+$host = "us-cdbr-east-06.cleardb.net";
+$user = "b7976c5d537010";
+$pass = "e9865089";
+$name = "heroku_8aaa86990959389";
+// $host = "localhost";
+// $user = "root";
+// $pass = "";
+// $name = "akademik";
 
 $conn = mysqli_connect($host, $user, $pass, $name) or die("Koneksi ke database gagal");
 mysqli_select_db($conn, $name) or die('Database is not found!');
