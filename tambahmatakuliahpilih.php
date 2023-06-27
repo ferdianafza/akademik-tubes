@@ -10,7 +10,7 @@ $name = "heroku_8aaa86990959389";
 // $name = "akademik";
 
 $koneksi = mysqli_connect($host, $user, $pass, $name) or die("Koneksi ke database gagal");
-mysqli_select_db($conn, $name) or die('Database is not found!');
+mysqli_select_db($koneksi, $name) or die('Database is not found!');
 
     $selectedMatakuliah = $_POST['matakuliah'];
     $selectedNid = $_POST['nid'];
